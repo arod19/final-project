@@ -28,3 +28,6 @@ The reason for the implementation of these libraries are that they were required
 4. http://www.rabbitmq.com
 5. https://pika.readthedocs.io/en/0.11.0/#
 6. https://www.rabbitmq.com/install-standalone-mac.html
+
+- Demo:
+https://youtu.be/bt7QgZBCdgI

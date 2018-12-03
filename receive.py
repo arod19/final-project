@@ -4,7 +4,7 @@ Angel Rodriguez
 Final Project
 
 A command line python program that sends and receives encrypted information using RabbitMQ
-and Diffie-Hellman key exchange ideas.
+and Diffie-Hellman key exchange principles.
 
 27 November 2018
 """
@@ -25,9 +25,7 @@ print("Agreed on modulus: " + str(modulus) + "\nand base: " + str(base))
 
 #Diffie-Hellman
 key = base ** secret % modulus
-print(key)
-
-
+#print(key)
 
 channel.queue_declare(queue='hello')
 
@@ -36,8 +34,8 @@ def callback(ch, method, properties, body):
     print(" [x] Received %r" % body)
 
 #decrypt using Diffie-Hellman
-    decrypted = int(body.decode("utf-8")) ** secret % modulus
-    print(decrypted)
+    #decrypted = int(body.decode("utf-8")) ** secret % modulus
+    #print(decrypted)
 
 channel.basic_consume(callback,
                       queue='hello',
